@@ -1,0 +1,10 @@
+#测试用例数据存放
+login:
+  - title: 登录用例
+    case:
+      - name: 13524280695
+        password: 1993tangsai
+        result: 账号或密码错误
+      - name: 13655676546
+        password: 67785653
+        result: 该手机号未注册
