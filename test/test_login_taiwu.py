@@ -47,5 +47,5 @@ class Test_login():
             raise
 
 if __name__ == '__main__':
-    pytest.main(['test_login_taiwu.py', '-s', '--alluredir', '../report/tmp1'])
-    os.system(('allure serve ../report/tmp1'))
+    pytest.main(['test_login_taiwu.py', '-s', '--alluredir', '../report/tmp3'])
+    os.system(('allure serve ../report/tmp3'))

@@ -29,7 +29,13 @@ class Test_myself():
             self.driver.click_element(data_loc.myself_1)
         with allure.step('step2:点击个人中心'):
             self.driver.click_element(data_loc.myself_2)
+        with allure.step('step3:获取断言'):
+            ele_text=self.driver.get_ele_text(data_loc.myself_3)
+        assert '用户' in ele_text
+
+
+
 
 if __name__ == '__main__':
-    pytest.main(['test_myself.py', '-s', '--alluredir', '../report/tmp1'])
-    os.system(('allure serve ../report/tmp1'))
+    pytest.main(['test_myself.py', '-s', '--alluredir', '../report/tmp4'])
+    os.system(('allure serve ../report/tmp4'))

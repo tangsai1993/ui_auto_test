@@ -20,3 +20,4 @@ login_6 = ("xpath", "//p[@class='el-message__content']")
 #个人中心元素定位
 myself_1=('xpath',"//div/span/div/img")
 myself_2=('xpath','//*[@class="el-dropdown-menu el-popper tw-dropdown-menu"]/a[1]/li')
+myself_3=('xpath','//*[@id="app"]/div/div[1]/div/div[3]/div[2]/div/div[1]/div/span/span')
