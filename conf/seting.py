@@ -24,3 +24,7 @@ Picture_path=os.path.join(
 Logs_path=os.path.join(
     BASE_PATH,'logs'
 )
+
+Yaml_path=os.path.join(
+    BASE_PATH,'data'
+)

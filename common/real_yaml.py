@@ -6,13 +6,13 @@
 @Email   : 294168604@qq.com
 @Software: PyCharm
 """
-
+from conf.seting import Yaml_path
 import yaml
 
 def reyaml():
-    with open('../data/data.yaml','r',encoding='utf-8') as f:
+    with open(f'{Yaml_path}/data.yaml','r',encoding='utf-8') as f:
         data=f.read()
-        data=yaml.load(data)
+        data=yaml.load(data,Loader=yaml.FullLoader)
         redata=data['login']
         redata=redata[0]
         redata=redata['case']
